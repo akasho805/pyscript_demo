@@ -11,6 +11,7 @@
     <div id="display"></div>
     <py-script output="display">
       import matplotlib.pyplot as plt
+      await micropip.install("matplotlib")
       import numpy as np
 
       x = np.random.randn(100)
