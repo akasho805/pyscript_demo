@@ -1,26 +1,20 @@
+
 <html>
-  <head>
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
     <py-env>
-      - numpy
-      - matplotlib
+        - matplotlib
     </py-env>
-  </head>
-  <body>
-    <div id="display"></div>
-    <py-script output="display">
-      import matplotlib.pyplot as plt
-      await micropip.install("matplotlib")
-      import numpy as np
-
-      x = np.random.randn(100)
-      y - np.random.randn(100)
-
-      fig,ax=plt.subplots()
-      ax.scatter(x,y)
-      fig
-        
-    </py-script>
-  </body>
+</head>
+<body>
+    <h1>Matplotlib</h1>
+    <py-script> print("My Lineplot")</py-script>
+</body>
 </html>
