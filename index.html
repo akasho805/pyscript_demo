@@ -4,8 +4,19 @@
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
   </head>
   <body>
-    <py-script>
-        print('Hello World!')
+    <div id="display"></div>
+    <py-script output="display">
+
+      import matplotlib.pyplot as plt
+      import numpy as np
+
+      x = np.random.randn(1000)
+      y - np.random.randn(1000)
+
+      fig,ax=plt.subplots()
+      ax.scatter(x,y)
+      fig
+        
     </py-script>
   </body>
 </html>
